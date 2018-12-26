@@ -1,3 +1,4 @@
+#This is how the #each method works
 def my_each (collection)# put argument(s) here
   # code here
   i = 0
