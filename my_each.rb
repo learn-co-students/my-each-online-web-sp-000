@@ -1,3 +1,5 @@
-def my_each # put argument(s) here
-  # code here
+require "pry"
+def my_each(collection)
+  binding.pry 
+
 end
