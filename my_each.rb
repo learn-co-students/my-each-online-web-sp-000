@@ -1,3 +1,5 @@
+#words = ['hi', 'hello', 'bye', 'goodbye']
+
 def my_each(array)
   i = 0
   while i < array.length
@@ -6,3 +8,5 @@ def my_each(array)
   end
   array
 end
+
+#my_each(words)
