@@ -1,10 +1,8 @@
 def my_each(array)
-  i = 0
-
-  while i < array.length
-    yield(array[i])
-    i += 1
+  @n = 0
+  while @n < array.length
+    yield(array[@n])
+    @n = @n + 1
   end
-
-  array
+  return array
 end
