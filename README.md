@@ -1,4 +1,4 @@
-y# My Each
+# My Each
 
 ## Objectives
 
