@@ -18,7 +18,7 @@ describe "my_each" do
 
   it "iterates over each element" do
     words = ['hi', 'hello', 'bye', 'goodbye']
-
+ 
     # This line tests that each word gets printed out by the loop!
     expect($stdout).to receive(:puts).exactly(words.length).times
     my_each(words) do |word|
