@@ -79,7 +79,6 @@ describe "my_each" do
     tas = ['arel', 'jon', 'logan', 'spencer']
     expected = tas.length
     times_called = 0
-
     my_each(tas) do |ta|
       times_called += 1
     end
@@ -87,14 +86,4 @@ describe "my_each" do
     expect(times_called).to eq(expected)
   end
 
-  it "only passes a single element into the block at a time" do
-
-    tas = ['arel', 'jon', 'logan', 'spencer']
-
-    my_each(tas) do |ta|
-      # ta cannot be an array
-      expect(ta.kind_of?(Array)).to eq(false)
-      expect(ta.kind_of?(String)).to eq(true)
-    end
-  end
-end
+  

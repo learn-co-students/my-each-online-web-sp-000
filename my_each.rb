@@ -7,7 +7,7 @@ def my_each(words) #do |item|
   while item < words.length
     yield(words[item])
     item = item + 1 
-    
+    "item"
  end
  
 end
