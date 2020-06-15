@@ -1,4 +1,4 @@
-#i = ["cats", "ferrets", "fox"]
+
 
 def my_each(words) #do |item|
   # put argument(s) here
@@ -7,9 +7,9 @@ def my_each(words) #do |item|
   while item < words.length
     yield(words[item])
     item = item + 1 
-    "item"
+    
  end
- 
+ words
 end
 
 
