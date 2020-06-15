@@ -1,3 +1,16 @@
-def my_each # put argument(s) here
+
+
+def my_each(words) #do |item|
+  # put argument(s) here
   # code here
+  item = 0
+  while item < words.length
+    yield(words[item])
+    item = item + 1 
+    
+ end
+ words
 end
+
+
+

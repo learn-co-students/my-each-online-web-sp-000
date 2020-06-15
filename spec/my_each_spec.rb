@@ -79,7 +79,6 @@ describe "my_each" do
     tas = ['arel', 'jon', 'logan', 'spencer']
     expected = tas.length
     times_called = 0
-
     my_each(tas) do |ta|
       times_called += 1
     end
