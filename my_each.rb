@@ -1,3 +1,10 @@
-def my_each # put argument(s) here
-  # code here
+require 'pry'
+
+def my_each(arg)
+  i = 0
+  while i < arg.length
+    yield arg[i]
+    i += 1
+  end
+  arg
 end
