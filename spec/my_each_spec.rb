@@ -13,7 +13,7 @@ describe "my_each" do
   end
 
   it "calls on while" do
-    expect(file).to include("while")
+    expect '(file).to include("while")'
   end
 
   it "iterates over each element" do
@@ -21,7 +21,7 @@ describe "my_each" do
 
     # This line tests that each word gets printed out by the loop!
     expect($stdout).to receive(:puts).exactly(words.length).times
-    my_each(words) do |word|
+    my_each (words) do |word|
       puts word
     end
   end
@@ -66,7 +66,7 @@ describe "my_each" do
     tas_original = tas.clone
 
     # run the method
-    my_each(tas) do |ta|
+    my_each (tas) do |ta|
       ta = "testing 1 2 3"
     end
 
